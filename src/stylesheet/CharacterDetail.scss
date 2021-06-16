@@ -1,0 +1,71 @@
+.detail {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media all and (max-width: 768px) {
+    width: 70%;
+  }
+  &__btncontainer &__btn {
+    justify-content: flex-end;
+    border: 2px solid rgb(179, 236, 21);
+    border-radius: 40px;
+    background-color: rgb(50, 182, 200);
+    font-weight: 700;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    align-self: flex-end;
+    font-size: 18px;
+    color: rgb(37, 37, 63);
+    &:hover {
+      color: white;
+      cursor: pointer;
+    }
+  }
+
+  &__imgcontainer {
+    background-color: rgb(48, 146, 236);
+    border: 5px solid rgb(179, 236, 21);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding: 20px;
+    text-align: left;
+    @media all and (max-width: 768px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &--img {
+      margin-top: 10px;
+      border-radius: 30px;
+      @media all and (max-width: 768px) {
+        width: 70%;
+        height: 70%;
+      }
+    }
+  }
+  &__text {
+    @media all and (max-width: 320px) {
+    }
+  }
+  &__name {
+    list-style: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    @media all and (max-width: 768px) {
+      font-size: 20px;
+    }
+  }
+  &__description {
+    list-style: none;
+    font-size: 22px;
+    padding-left: 20px;
+    padding-top: 20px;
+    @media all and (max-width: 768px) {
+      font-size: 15px;
+    }
+  }
+}

@@ -6,7 +6,7 @@ const getDataFromApi = () => {
       // console.log(data.results);
       return data.results.map((character) => {
         // console.log(character);
-        // los datos que quiero sacar de todos los que hay en la API
+        // los datos que quiero sacar de todos los que hay en la API son:
         return {
           id: character.id,
           image: character.image,
