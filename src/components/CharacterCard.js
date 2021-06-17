@@ -5,6 +5,7 @@ import PropTypes from "prop-types";
 
 // 1. LISTADO DE PERSONAJES. Pinto el contenido dentro de cada tarjeta de personaje: cada una es un <li> que contiene una imagen, nombre y especie del personaje en cuestión.
 const CharacterCard = (props) => {
+  // console.log(props);
   return (
     <li className="card">
       <Link to={`/character-detail/${props.character.id}`}>
@@ -14,7 +15,7 @@ const CharacterCard = (props) => {
           alt={`Imagen de ${props.character.name}`}
         />
         <h3 className="card__title">{props.character.name}</h3>
-        <p className="card__description">{props.character.specie}</p>
+        <p className="card__description">{props.character.species}</p>
       </Link>
     </li>
   );

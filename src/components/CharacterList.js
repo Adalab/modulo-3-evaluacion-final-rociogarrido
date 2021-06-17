@@ -5,6 +5,7 @@ import image from "../images/no_results2.png";
 import PropTypes from "prop-types";
 
 const CharacterList = (props) => {
+  // console.log(props);
   // Recibo por props los datos de App y pinto una lista que contendrá, mediante un mapeo, cada una de las tarjetas de los personajes como un item dentro de dicha lista.
   const characterElements = props.characters.map((character) => {
     return (

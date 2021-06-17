@@ -40,14 +40,15 @@ const App = () => {
     });
 
     if (clickedCharacter) {
+      // console.log(clickedCharacter);
       return (
         <CharacterDetail
           image={clickedCharacter.image}
           name={clickedCharacter.name}
           status={clickedCharacter.status}
-          species={clickedCharacter.specie}
-          origin={clickedCharacter.planet}
-          episodes={clickedCharacter.episodes.length}
+          species={clickedCharacter.species}
+          origin={clickedCharacter.origin}
+          episode={clickedCharacter.episode.length}
         ></CharacterDetail>
       );
     } else {
