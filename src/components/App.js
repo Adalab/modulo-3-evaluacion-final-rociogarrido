@@ -7,6 +7,7 @@ import Filters from "./Filters";
 import CharacterList from "./CharacterList";
 import CharacterDetail from "./CharacterDetail";
 import notFound from "../images/404error.jpeg";
+import PropTypes from "prop-types";
 
 const App = () => {
   // usamos el hook useState para definir dos propiedades del estado del componente (cada uno de esos hooks actúa sobre la propiedad especificada por medio de la función que le hemos pasado en cada caso, recibiendo como argumento inicial de useState un array y un string vacío.
@@ -53,8 +54,8 @@ const App = () => {
       // 7. BONUS: URL compatible. En el caso que la usuaria navegue a una URL inexistente, debemos mostrar un mensaje del tipo "el personaje que buscas no existe".
       return (
         <div className="notFound">
-          <h2>El personaje que buscas no existe.</h2>
-          <img className="imgnofound" src={notFound} alt="not found" />
+          <h2>El personaje que buscas no existe</h2>
+          <img className="not-found" src={notFound} alt="not found" />
         </div>
       );
     }
@@ -75,6 +76,10 @@ const App = () => {
       </Switch>
     </div>
   );
+};
+
+App.propTypes = {
+  filteredCharacters: PropTypes.array,
 };
 
 export default App;

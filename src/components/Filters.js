@@ -3,7 +3,7 @@ import "../stylesheet/App.scss";
 
 const Filters = (props) => {
   // evento que sube hasta App mediante lifting
-  const handleFilter = (ev) => {
+  const handleChange = (ev) => {
     props.handleFilter(ev.target.value);
   };
   // Si, estando en el campo de filtrado pulsamos intro, debo impedir que el navegador navegue o cambie la ruta sin querer.
@@ -21,7 +21,7 @@ const Filters = (props) => {
         type="text"
         id="name"
         value={props.nameFilter}
-        onChange={handleFilter}
+        onChange={handleChange}
       />
     </form>
   );
