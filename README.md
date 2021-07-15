@@ -1,4 +1,4 @@
-# Rick and Morty character finder <img src="https://www.stickpng.com/es/img/dibujos-animados/rick-y-morty/rick-y-morty-monstruos" width="50px">
+# Rick and Morty character finder 
 
 Ejercicio de evaluación final de programación con _React_ para el módulo 3 de Adalab.
 
