@@ -1,4 +1,4 @@
-# Rick and Morty's characters finder ![favicon](https://user-images.githubusercontent.com/77678575/125936636-1164009b-edf0-4153-a170-dbdd81c51360.png)
+# Rick and Morty's characters finder
 
 Esta aplicación web desarrollada muestra con un listado de personajes de la serie _Rick and Morty_, permite filtrar por el nombre del personaje.
 
